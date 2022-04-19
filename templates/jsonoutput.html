@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}JSON Result{% endblock %}
+{% block content %}
+<p>Read and Extracted text into JSON Format</p>
+<ol>
+    {% for val in dic.values() %}
+    <li>
+        <a href="/extractngrams/{{val}}">{{val}}</a>
+    </li>
+    {% endfor %}
+</ol>
+{% endblock %}

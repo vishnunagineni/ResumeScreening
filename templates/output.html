@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+
+{% block content %}
+<h2>{{data["title"]}}</h2>
+<table>
+    <tr>
+        <th>Role</th>
+        &nbsp;&nbsp;&nbsp;&nbsp;    
+        <td>{{data["role"]}}</td>
+    </tr>
+    <tr>
+        <th>Experience</th>
+        <td>{{data["experience"]}}</td>
+    </tr>
+    <tr>
+        <th>Job Type</th>
+        <td>{{data["job_type"]}}</td>
+    </tr>
+    <tr>
+        <th>Location</th>
+        <td>{{data["location"]}}</td>
+    </tr>
+</table>
+<br>
+<h2>Responsibilities:</h2>
+<br>
+<ol>
+    {% for res in data["responsibilities"] %}
+    <li>{{res}}</li>
+    {% endfor %}
+</ol>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+    "dbcon":{
+        "user":"root",
+        "password":"vishnu",
+        "host":"localhost",
+        "database":"resume_screening"
+    },
+    "host":"127.0.0.1"
+    
+}

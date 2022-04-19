@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}HOME{% endblock %}
+
+{% block content %}
+<h1>Upload Resumes</h1>
+<form action="/uploadresumes/JD107" method="POST" align="center" style="margin: 100;" enctype="multipart/form-data">
+    <p>
+        <label>Browse and Upload Folder</label>
+        <br>
+        <br>
+        <input type="file" name="folder" webkitdirectory directory>
+        <input type="submit" value="upload">
+    </p>
+</form>
+    <br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <label style="font-size: xx-large;align-content: center;">OR</label>
+    <br>
+    <br>
+<form action="/uploadresumes/JD102" method="POST" align="center" style="margin: 100;" enctype="multipart/form-data">
+    <p>
+        <label>Browse and Upload Files</label>
+        <br>
+        <br>
+        <input type="file" id="file" name="file" multiple>
+        <input type="submit" value="upload">
+    </p>
+</form>
+{% endblock %}

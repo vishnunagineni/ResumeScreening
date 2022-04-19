@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+
+{% block content %}
+<p>Files Uploaded Successfully</p>
+<ol>
+    {% for val in keyphrases %}
+    <li>
+        {{ val }}
+    </li>
+    {% endfor %}
+</ol>
+
+{% endblock %}
